@@ -27,17 +27,19 @@ cd question-answering-model
 ### 2. Download Pre-trained Models
 Download the pre-trained models for DistilBERT and Universal Sentence Encoder and place them in the designated directories:
 
-DistilBERT: ../input/distilbertbaseuncased/
-Universal Sentence Encoder: ../input/universalsentenceencoderlarge4/
+- **DistilBERT:** ../input/distilbertbaseuncased/
+- **Universal Sentence Encoder:** ../input/universalsentenceencoderlarge4/
 
-🔧 Usage
-1. Data Preprocessing
+## 🔧 Usage
+
+### 1. Data Preprocessing
 The preprocess_data function prepares the training and test datasets by:
 
-Calculating text statistics (length, number of stopwords, etc.)
-Feature engineering for domain information
-Creating features based on word overlap
-2. Embedding Computation
+- Calculating text statistics (length, number of stopwords, etc.)
+- Feature engineering for domain information
+- Creating features based on word overlap
+
+### 2. Embedding Computation
 The compute_embeddings function extracts sentence embeddings for questions and answers using:
 
 - **DistilBERT** for token-level embeddings
